@@ -1,0 +1,149 @@
+//////////fomat/////////  
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+////colores/////// 
+$bgBody: hsl(215, 32%, 27%);
+$bgCard: hsl(216, 50%, 16%);
+$colorWhite: hsl(0, 0%, 100%);
+$colorBlack: hsl(217, 54%, 11%);
+$colorLetter: hsl(215, 51%, 70%);
+$colorETH: hsl(178, 100%, 50%);
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+body {
+    background-color: $bgBody;
+    font-family: Outfit;
+    font-size:   18px;
+    color: $colorWhite;
+    color: $colorLetter;
+    padding: 1.5rem;
+   
+
+
+
+}
+.card{
+    -webkit-box-shadow: 10px 10px 20px 10px #383838;
+    box-shadow: 5px 10px 20px 10px $colorBlack;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: $bgCard;
+    
+
+    .imagen{
+        position: relative;
+
+        
+        img{
+            
+            max-width: 100%;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        div{
+            transition: opacity 0.3s;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            background-color: hsl(178, 100%, 50%,);
+            opacity: 0;
+            width: 100%;
+            height: calc(100% - 4px); 
+            z-index: 999;
+            img{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        div:hover{
+            opacity: 75%;
+        }
+        
+    }
+    .descripcion{
+        
+        h1{
+            font-weight: 600;
+            color: $colorWhite;
+            margin: 1rem .5rem .5rem 0;
+        }
+        h1:hover{
+            color: $colorETH;
+            cursor: pointer;
+        }
+        p{
+            font-weight: 300;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0;
+            border-bottom: 1px solid $bgBody;
+            li{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 0.5rem;
+                }
+                
+            }
+            li:first-child{
+                color: $colorETH;
+
+            }
+            
+            
+        }
+        
+
+    }
+    .creador{
+        
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        h2{
+            font-size: 15px;
+
+        }
+        
+        img{
+            width: 3rem;
+            margin-right: 2rem;
+            border: solid;
+            border-radius: 50%;
+        }
+        span{
+            color: $colorWhite;
+            
+
+        }
+        span:hover{
+            color: $colorETH;
+            cursor: pointer;
+        }
+        
+    }
+
+
+
+
+}
+@media (min-width:500px){
+    .card{
+        width: 450px;
+        margin: 0 auto 1rem;
+    }
+}

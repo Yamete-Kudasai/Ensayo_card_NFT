@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  background-color: #2f415b;
+  font-family: Outfit;
+  font-size: 18px;
+  color: white;
+  color: #8bacda;
+  padding: 1.5rem;
+}
+
+.card {
+  -webkit-box-shadow: 10px 10px 20px 10px #383838;
+  box-shadow: 5px 10px 20px 10px #0d192b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #14253d;
+}
+
+.card .imagen {
+  position: relative;
+}
+
+.card .imagen img {
+  max-width: 100%;
+}
+
+.card .imagen img:hover {
+  cursor: pointer;
+}
+
+.card .imagen div {
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  background-color: #00fff7;
+  opacity: 0;
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 999;
+}
+
+.card .imagen div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card .imagen div:hover {
+  opacity: 75%;
+}
+
+.card .descripcion h1 {
+  font-weight: 600;
+  color: white;
+  margin: 1rem .5rem .5rem 0;
+}
+
+.card .descripcion h1:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card .descripcion p {
+  font-weight: 300;
+}
+
+.card .descripcion ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid #2f415b;
+}
+
+.card .descripcion ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .descripcion ul li img {
+  margin-right: 0.5rem;
+}
+
+.card .descripcion ul li:first-child {
+  color: #00fff7;
+}
+
+.card .creador {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.card .creador h2 {
+  font-size: 15px;
+}
+
+.card .creador img {
+  width: 3rem;
+  margin-right: 2rem;
+  border: solid;
+  border-radius: 50%;
+}
+
+.card .creador span {
+  color: white;
+}
+
+.card .creador span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .card {
+    width: 450px;
+    margin: 0 auto 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
