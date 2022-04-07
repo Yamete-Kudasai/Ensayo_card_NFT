@@ -28,7 +28,6 @@ body {
 
 }
 .card{
-    -webkit-box-shadow: 10px 10px 20px 10px #383838;
     box-shadow: 5px 10px 20px 10px $colorBlack;
     padding: 1.5rem;
     border-radius: 10px;
@@ -144,6 +143,6 @@ body {
 @media (min-width:500px){
     .card{
         width: 450px;
-        margin: 0 auto 1rem;
+        margin: 0 auto 3rem;
     }
 }
